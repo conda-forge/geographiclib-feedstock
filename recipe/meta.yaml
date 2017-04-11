@@ -1,6 +1,6 @@
 {% set name = "geographiclib" %}
-{% set version = "1.47" %}
-{% set sha256 = "5350d64ea9309626e6e80b272b8891bef2fe165c8febf2a1757e976f4b3620f4" %}
+{% set version = "1.48" %}
+{% set sha256 = "0460a3c7dfaf30a159abe3ff187aa4b3ec90cfda1a85be321d3a51745c6dbb27" %}
 
 package:
   name: {{ name|lower }}
@@ -10,9 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    # https://github.com/conda-forge/staged-recipes/pull/2586#issuecomment-285996477
-    - fix-win32-py27-test.patch
 
 build:
   number: 0
