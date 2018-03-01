@@ -1,6 +1,6 @@
 {% set name = "geographiclib" %}
-{% set version = "1.48" %}
-{% set sha256 = "0460a3c7dfaf30a159abe3ff187aa4b3ec90cfda1a85be321d3a51745c6dbb27" %}
+{% set version = "1.49" %}
+{% set sha256 = "635da648fce80a57b81b28875d103dacf7deb12a3f5f7387ba7d39c51e096533" %}
 
 package:
   name: {{ name|lower }}
