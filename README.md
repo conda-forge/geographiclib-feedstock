@@ -16,9 +16,7 @@ direct and inverse problems for an ellipsoid of revolution.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/geographiclib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/geographiclib-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/geographiclib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/geographiclib-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/geographiclib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/geographiclib-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/geographiclib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/geographiclib-feedstock)
 
 Current release info
 ====================
