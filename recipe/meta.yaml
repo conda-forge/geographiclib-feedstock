@@ -1,23 +1,22 @@
-{% set name = "geographiclib" %}
-{% set version = "1.48" %}
-{% set sha256 = "0460a3c7dfaf30a159abe3ff187aa4b3ec90cfda1a85be321d3a51745c6dbb27" %}
+{% set version = "1.49" %}
 
 package:
-  name: {{ name|lower }}
+  name: geographiclib
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/g/geographiclib/geographiclib-{{ version }}.tar.gz
+  sha256: 635da648fce80a57b81b28875d103dacf7deb12a3f5f7387ba7d39c51e096533
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
+    - pip
   run:
     - python
 
@@ -43,3 +42,4 @@ extra:
   recipe-maintainers:
     - QuLogic
     - cffk
+    - ocefpaf
