@@ -9,9 +9,9 @@ source:
   sha256: 12bd46ee7ec25b291ea139b17aa991e7ef373e21abd053949b75c0e9ca55c632
 
 build:
-  noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -29,6 +29,7 @@ test:
 about:
   home: https://geographiclib.sourceforge.io/html/python/
   license: MIT
+  license_file: LICENSE.txt
   license_family: MIT
   summary: 'The geodesic routines from GeographicLib'
 
