@@ -1,4 +1,4 @@
-{% set version = "1.50" %}
+{% set version = "1.52" %}
 
 package:
   name: geographiclib
@@ -6,15 +6,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geographiclib/geographiclib-{{ version }}.tar.gz
-  sha256: 12bd46ee7ec25b291ea139b17aa991e7ef373e21abd053949b75c0e9ca55c632
+  sha256: ac400d672b8954b0306bca890b088bb8ba2a757dc8133cca0b878f34b33b2740
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_file: LICENSE.txt
   license_family: MIT
-  summary: 'The geodesic routines from GeographicLib'
+  summary: The geodesic routines from GeographicLib
 
   description: |
     This implements algorithms for geodesics (Karney, 2013) for solving the
