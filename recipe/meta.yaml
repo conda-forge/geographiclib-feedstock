@@ -1,30 +1,36 @@
+{% set name = "geographiclib" %}
 {% set version = "1.52" %}
 
+
 package:
-  name: geographiclib
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/geographiclib/geographiclib-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geographiclib-{{ version }}.tar.gz
   sha256: ac400d672b8954b0306bca890b088bb8ba2a757dc8133cca0b878f34b33b2740
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
     - geographiclib
+    - geographiclib.test
   commands:
+    - pip check
     - python -m unittest -v geographiclib.test.test_geodesic
+  requires:
+    - pip
 
 about:
   home: https://geographiclib.sourceforge.io/html/python/
