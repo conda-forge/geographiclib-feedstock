@@ -1,5 +1,5 @@
 {% set name = "geographiclib" %}
-{% set version = "1.52" %}
+{% set version = "2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geographiclib-{{ version }}.tar.gz
-  sha256: ac400d672b8954b0306bca890b088bb8ba2a757dc8133cca0b878f34b33b2740
+  sha256: f7f41c85dc3e1c2d3d935ec86660dc3b2c848c83e17f9a9e51ba9d5146a15859
 
 build:
   number: 0
