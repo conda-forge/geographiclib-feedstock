@@ -1,7 +1,7 @@
 About geographiclib
 ===================
 
-Home: https://geographiclib.sourceforge.io/html/python/
+Home: https://github.com/geographiclib/geographiclib-python
 
 Package license: MIT
 
@@ -9,12 +9,12 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geographiclib-f
 
 Summary: The geodesic routines from GeographicLib
 
-Development: https://sourceforge.net/projects/geographiclib/
+Development: https://github.com/geographiclib/geographiclib-python
 
-Documentation: https://geographiclib.sourceforge.io/html/python/
+Documentation: https://geographiclib.sourceforge.io/Python/doc/
 
-This implements algorithms for geodesics (Karney, 2013) for solving the
-direct and inverse problems for an ellipsoid of revolution.
+This implements algorithms for geodesics (Karney, 2013) for solving
+the direct and inverse problems for an ellipsoid of revolution.
 
 
 Current build status
