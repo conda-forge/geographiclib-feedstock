@@ -154,4 +154,3 @@ Feedstock Maintainers
 * [@QuLogic](https://github.com/QuLogic/)
 * [@cffk](https://github.com/cffk/)
 * [@ocefpaf](https://github.com/ocefpaf/)
-
